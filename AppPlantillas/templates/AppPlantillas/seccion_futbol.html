@@ -1,0 +1,476 @@
+{% extends "AppPlantillas/index.html" %}
+
+{% load static %}
+
+{% block mantenerbarra %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+	{% load static %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Bootstrap 4, from LayoutIt!</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+	<link href="{% static 'AppPlantillas/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'AppPlantillas/css/style.css' %}" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h1 class="text-center">
+				<strong>FUTBOL</strong>
+			</h1>
+		</div>
+	</div>
+	<p>
+				
+	</p>
+	<div class="row">
+		<div class="col-md-6">
+			<dl>
+				<dt>
+					¿Cuándo debutará Chiquito Romero en Boca?
+				</dt>
+				<dd>
+					La salida de Rossi del equipo precipitó la sucesión del arco. En el horizonte cercano, encima, está nada menos que Racing...
+				</dd>
+				<dt>
+					Sosa ya está en casa: el regreso a Estudiantes
+				</dt>
+				<dd>
+					El Principito volvió oficialmente al Pincha. Mirá su primer día en City Bell.
+				</dd>
+				<dt>
+					El like de Haaland a la hinchada de Boca
+				</dt>
+				<dd>
+					El noruego, al que ya se lo ha visto con camisetas del Xeneize, volvió a mostrar su lado bostero.
+				</dd>
+				<dt>
+					Luis Suárez, sin Sudamericana y dura caída
+				</dt>
+				<dd>
+					Nacional perdió 0-3 vs. Goianiense y se despidió de la Copa. Al 9, que entró estando 0-2, sólo le queda el torneo charrúa antes de Qatar.
+				</dd>
+			</dl>
+		</div>
+		<p>
+				
+		</p>
+		<div class="col-md-6">
+			<table class="table table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>
+							TV
+						</th>
+						<th>
+							PARTIDO
+						</th>
+						<th>
+							FECHA
+						</th>
+						<th>
+							ESTADIO
+						</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							ESPN
+						</td>
+						<td>
+							Boca Vs River
+						</td>
+						<td>
+							08/08/2020
+						</td>
+						<td>
+							La Bombonera
+						</td>
+					</tr>
+					<tr class="table-active">
+						<td>
+							STAR +
+						</td>
+						<td>
+							Banfield Vs Lanús
+						</td>
+						<td>
+							07/08/2022
+						</td>
+						<td>
+							Florencio Sola
+						</td>
+					</tr>
+					<tr class="table-success">
+						<td>
+							FOX SPORT
+						</td>
+						<td>
+							Independiente Vs Racing
+						</td>
+						<td>
+							06/08/2022
+						</td>
+						<td>
+							Libertadores de America
+						</td>
+					</tr>
+					<tr class="table-warning">
+						<td>
+							TyC SPORT
+						</td>
+						<td>
+							Estudiantes Vs Gimnasia LP
+						</td>
+						<td>
+							08/08/2022
+						</td>
+						<td>
+							Jorge Luis Hirschi
+						</td>
+					</tr>
+					<tr class="table-danger">
+						<td>
+							ESPN+
+						</td>
+						<td>
+							Rosario Central Vs Newells
+						</td>
+						<td>
+							07/08/22
+						</td>
+						<td>
+							Estadio Gigante de Arroyito
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<p>
+				
+	</p>
+
+	
+
+	
+	<div class="row">
+		<div class="col-md-4">
+			<div class="card">
+				<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+				</div>
+			</div>
+		</div>
+	
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+							
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>
+
+			</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>
+				
+			</p>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card">
+						<img class="card-img-top" alt="Bootstrap Thumbnail First" src="{% static 'AppPlantillas/img/futbol_noticia_preview.jpg' %}">
+						<div class="card-block">
+							<h5 class="card-title">
+								Banfield lo dio vuelta y pasó a octavos de Copa Argentina
+							</h5>
+							<style type="text/css">
+								#banfieldText{
+									display: none;
+								}
+							</style>
+							<p class="card-text">
+								Banfield invocó a Jesús y Dátolo comenzó a cambiar la historia del partido con un golazo colosal de tiro libre. Un rato después, apareció un Coronel (Emanuel) para, con autoridad, ponerle el sello a una buena victoria de Banfield. 
+								<div id="banfieldText">
+								<p>Después de ir 1-0 abajo, el Taladro reaccionó. Se sacudió la modorra, entendió que si se lo proponía podía llevarse un éxito y fue por él con decisión. Necesitó, también, de la gran tapada mano a mano de Cambeses, ante el ingresado Gallegos. </p>
+								</div>
+							</p>
+							<script type="text/javascript">
+								function banfieldtexto() {
+									document.getElementById('banfieldText').style.display = 'block';
+									document.getElementById('banfieldboton').style.display = 'none';
+								}
+							</script>
+							<p>
+								<a class="btn btn-primary" href="{% url 'noticia_banfield' %}">Entrar</a>
+								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}
+{% block contenidonoaparece %}
+
+{% endblock %}
+<script src="{% static 'AppPlantillas/js/jquery.min.js' %}"></script>
+<script src="{% static 'AppPlantillas/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'AppPlantillas/js/scripts.js' %}"></script>
+  </body>
+</html>

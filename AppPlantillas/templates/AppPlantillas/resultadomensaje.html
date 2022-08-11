@@ -1,0 +1,96 @@
+{% extends "AppPlantillas/index.html" %}
+
+{% load static %}
+
+{% block mantenerbarra %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> MENSAJES </h1>
+
+    {% if formulario_mensaje.errors %}
+        <p style="color:red"> HAY ALGO MAL EN EL FORMULARIO</p>
+    {% endif %}
+
+    <p> Estamos buscando mensajes para: {{receptor}}</p>
+    
+    {% if mensaje %}
+    
+    <ul>
+
+
+    {% for variables in mensaje %}
+ 
+       
+
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th>
+                                    ID
+                                </th>
+                                <th>
+                                    Fecha
+                                </th>
+                                <th>
+                                    Emisor
+                                </th>
+                                <th>
+                                    Cuerpo
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    {{variables.id}}
+                                </td>
+                                <td>
+                                    {{variables.tiempo}}
+                                </td>
+                                <td>
+                                    {{variables.emisor}}
+                                </td>
+                                <td>
+                                    {{variables.cuerpo}}
+                                </td>
+                                <td>                                    
+                                                                       
+                                </td>
+                            </tr>
+                            
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+
+
+    {% endfor %}
+    </ul>
+    {% endif %}
+
+ 
+
+</body>
+</html>
+
+{% endblock %}
+
+{% block contenidonoaparece %}
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "AppPlantillas/index.html" %}
+
+{% load static %}
+
+{% block titulo %}
+<h1 class="mb-5">Editar perfil</h1>
+{% endblock %}
+
+{% block contenidoQueCambia %}
+
+<h1>{{ mensaje }}</h1>
+<form action="" method="POST"> {% csrf_token %}
+
+    {{ editarPerfil.as_p }}
+
+    <button type="submit">Modificar</button>
+</form>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "AppPlantillas/index.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+{% if not request.user.is_authenticated %}
+<h1 class="mb-5">LOGIN</h1>
+{% endif %}
+
+<form action="{% url 'Login' %}" method="POST"> {% csrf_token %}
+
+    <h1>{{ mensaje }}</h1>
+
+    {{form.as_p}}
+    <p>
+        
+    </p>
+    {% if not request.user.is_authenticated %}
+    <button type="submit">Iniciar Sesion</button>
+    {% endif %}
+</form>
+
+
+{% endblock %}
